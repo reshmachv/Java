@@ -44,13 +44,9 @@ public class LinkedListCreator {
         }
     }
     public int printHead(){
-        if(head!=null){return head.data;}
-        return -1;
+        return head!=null?head.data:-1;
     }
     public int printTail() {
-        if(tail!=null) {
-            return tail.data;
-        }
-        return -1;
+        return tail!=null?tail.data:-1;
     }
 }
