@@ -30,10 +30,7 @@ public class LinkedListCreator {
     }
 
     public int peek(){
-        try{return tail.data;}
-        catch (NullPointerException e) {
-            return -1;
-        }
+       return tail!=null?tail.data:-1;
     }
 
     public void pop(){
@@ -50,7 +47,7 @@ public class LinkedListCreator {
         if(head!=null){return head.data;}
         return -1;
     }
-    public int printTail(){
+    public int printTail() {
         if(tail!=null) {
             return tail.data;
         }
