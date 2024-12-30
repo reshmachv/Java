@@ -2,6 +2,7 @@ package ArrayListTutorial;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class LearningList {
@@ -10,13 +11,15 @@ public class LearningList {
         list.add("1");
         list.add("2");
         list.add("3");
-        System.out.println(list);
+/*        System.out.println(list);
         String[] arrays=list.toArray(new String[0]);
-        System.out.println(Arrays.toString(arrays));
+        System.out.println(Arrays.toString(arrays));*/
 
         List<Integer> list1 = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5));
-        list1.add(6);
+        Collections.sort(list1);
+        list1.sort(null);
         System.out.println(list1);
+
 
 
     /*List<Integer> list = Arrays.asList(1,2,3,4,5);

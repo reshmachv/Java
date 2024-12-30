@@ -13,5 +13,6 @@ public class Main {
         System.out.println("head of linked list is "+linkedList.printHead());
         System.out.println("tail of linked list is "+linkedList.printTail());
         System.out.println("check if List is empty "+(linkedList.isEmpty() ? "yes":"no"));
+
     }
 }
